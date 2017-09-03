@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login</title>
+
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- start validation-->
+
+    <!-- end validation-->
+    
+      <!-- End nab manu -->
+      <!-- Start Sign Up -->
+      <div class="row"> 
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <br><br><br>
+                                <!-- <div class="panel panel-default" < style="background-color:transparent !important;> -->
+          <div id="login_panel" class="panel panel-default" >  
+                                        <!-- <div class="panel-body" style="background-color:transparent !important;> -->
+            <div class="panel-body">
+              <form action="/sendOrder"  method="post">
+               <div class="form-group">
+               <% products.forEach( function( prod ){ %>
+  
+
+                <label>  <input type="checkbox" class="form-control input-sm" id="product"  name='product' value="<%= prod%>"><a href="/sendOrder/<%= prod._id%>"><%= prod.name %></a></label><br>
+                <% }); %>
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm ">send order </button>
+              </form>
+                                        </div>
+                                  </div>
+                        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+        </div>  
+  <!-- End Sign Up  -->
+
+
+
+</body>
+</html>

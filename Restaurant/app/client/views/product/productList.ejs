@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <title>Node Authentication</title>
+<head>
+<style>
+#myDIV {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+</style>
+
+</head>
+<body>
+
+
+<div>
+<% products.forEach( function( prod ){ %>
+  <p><a href="/productDetail/<%= prod._id %>"><%= prod.name %></p></a>
+  <p><%= prod.price %></p>
+  
+<% prod.ingridients.forEach( function( ing ){ %>
+  <p><%= ing %></p>
+  
+  
+  
+<% }); %>
+
+
+  <br>
+<% }); %>
+
+  
+
+</div>
+
+
+
+
+</body>
+</html>
+
+

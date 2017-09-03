@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <title>Node Authentication</title>
+<head>
+<style>
+#myDIV {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+</style>
+
+</head>
+<body>
+
+
+<div>
+<% comments.forEach( function( comment ){ %>
+  
+  <p><%= comment.description %></p>
+  <p><%= comment.product.name %></p>
+  <p><%= comment.product.price %></p>
+  
+  <br>
+<% }); %>
+
+  
+
+</div>
+
+
+
+
+</body>
+</html>
+
+
